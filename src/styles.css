@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+.img{
+	background-image: url("assets/img/donate.jpg");
+	width: 100%;
+	height: 80vh;
+	transform: skewY(-0.1deg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
