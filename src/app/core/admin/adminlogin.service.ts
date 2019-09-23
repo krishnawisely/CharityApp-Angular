@@ -8,8 +8,12 @@ export class AdminloginService {
 
   constructor(private http:HttpClient) { }
 
-  urlData="";
+  urlData="http://localhost:8080/CharityApplication/";
 
-  public 
+  public adminLogin(email:string,password:string):any
+  {
+    let formData:string ="email="+email+"&password="+password;
+    return this.http.get(this.urlData+"AdminLoginServlet?"+formData);
+  }
 
 }

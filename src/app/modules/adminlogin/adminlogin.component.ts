@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AdminloginService } from 'src/app/core/admin/adminlogin.service';
 
 @Component({
   selector: 'app-adminlogin',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminloginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private adminservice:AdminloginService) { }
 
   private email:string;
   private password:string;
@@ -17,6 +18,9 @@ export class AdminloginComponent implements OnInit {
 
   adminLogin()
   {
+    this.adminservice.adminLogin(this.email,this.password).subscribe( (res)=>{
+      console.log(res);
+    });
     console.log("admin login is works"+this.email+"-"+this.password);
   }
 

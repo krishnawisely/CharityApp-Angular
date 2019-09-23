@@ -11,7 +11,7 @@ import { DonorloginComponent } from './modules/donorlogin/donorlogin.component';
 import { FormsModule } from '@angular/forms';
 import { AdminloginComponent } from './modules/adminlogin/adminlogin.component';
 import { HttpClientModule } from '@angular/common/http';
-import { DonorloginService } from './core/donorlogin.service'
+import { DonorloginService } from './core/donor/donorlogin.service'
 
 @NgModule({
   declarations: [

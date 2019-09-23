@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { DonorloginService } from './donorlogin.service';
+import { ListrequestService } from './listrequest.service';
 
-describe('DonorloginService', () => {
+describe('ListrequestService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: DonorloginService = TestBed.get(DonorloginService);
+    const service: ListrequestService = TestBed.get(ListrequestService);
     expect(service).toBeTruthy();
   });
 });

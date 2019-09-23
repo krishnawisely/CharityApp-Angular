@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DonorloginService } from 'src/app/core/donorlogin.service';
+import { DonorloginService } from 'src/app/core/donor/donorlogin.service';
 import { Router } from '@angular/router';
 
 
@@ -25,7 +25,7 @@ export class DonorloginComponent implements OnInit {
   {
     this.loginservice.donorLogin(this.email,this.password).subscribe( (res)=> {
       console.log(res);
-      if(res != null)
+      if(res.errorMessage == null)
       {
         this.router.navigate(['./home']);
       }
